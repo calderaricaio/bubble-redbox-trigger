@@ -1,0 +1,14 @@
+
+{
+  "manifest_version": 3,
+  "name": "Bubble.io Red Box",
+  "version": "1.0",
+  "description": "Shows a red box on bubble.io when pressing Cmd/Ctrl + E",
+  "permissions": ["activeTab"],
+  "content_scripts": [
+    {
+      "matches": ["*://*.bubble.io/*"],
+      "js": ["content.js"]
+    }
+  ]
+}
